@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Refurbly</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo-link" href="index.html">
+      <img src="images/logo.png" alt="Refurbly logo" class="logo" />
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="energy.html">Energy Analysis</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-page-section">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p class="eyebrow">Get In Touch With Mukesh</p>
+
+          <h2>07735319513</h2>
+
+          <p>
+            Looking for help with a refurbishment, renovation, repair,
+            extension, boiler installation, plumbing, electrical work,
+            or energy assessment? Complete the form and we'll get back to you.
+          </p>
+
+          <div class="contact-info-card">
+            <h3>What can we help with?</h3>
+            <p>
+              House Refurbishment<br>
+              Flat Refurbishment<br>
+              Bathroom Renovation<br>
+              Electrical Services<br>
+              Plumbing Services<br>
+              Boiler Installation<br>
+              House Extensions<br>
+              ABBE Qualified Energy Analysis
+            </p>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xeewokvj"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </label>
+
+          <label>
+            Phone Number
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your phone number"
+              required
+            />
+          </label>
+
+          <label>
+            Email Address
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+          </label>
+
+          <label>
+            Service Required
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>House Refurbishment</option>
+              <option>Flat Refurbishment</option>
+              <option>Bathroom Renovation</option>
+              <option>Electrical Services</option>
+              <option>Plumbing Services</option>
+              <option>Boiler Installation</option>
+              <option>House Extension</option>
+              <option>Energy Analysis</option>
+            </select>
+          </label>
+
+          <label>
+            Project Details
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Tell us about your project..."
+              required
+            ></textarea>
+          </label>
+
+          <label>
+            Upload Photos or Videos
+            <input
+              type="file"
+              name="attachment"
+              accept="image/*,video/*"
+            />
+            <span class="field-note">
+              Photos or videos can help us better understand your project.
+            </span>
+          </label>
+
+          <button class="button primary-button" type="submit">
+            Send Request
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Refurbly. All rights reserved.</p>
+  </footer>
+</body>
+</html>
